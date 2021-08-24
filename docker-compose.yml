@@ -2,7 +2,10 @@ version: "3"
 
 services:
   web:
+    build: .      
     image: "juniorhdg/myfirstapp:2.0"
+    environment:
+      - MESSAGE= EU QUERO TIRAR 10!      
     networks:
       labdocker:
         ipv4_address: 172.20.0.2
