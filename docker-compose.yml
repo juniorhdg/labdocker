@@ -5,7 +5,8 @@ services:
     build: .      
     image: "juniorhdg/myfirstapp:2.0"
     environment:
-      - MESSAGE= EU QUERO TIRAR 10!      
+      - MESSAGE= EU QUERO TIRAR 10!
+      - REDIS_HOST="redis"  
     networks:
       labdocker:
         ipv4_address: 172.20.0.2

@@ -16,7 +16,12 @@ spec:
     spec:
       containers:
       - name: web
-        image: gcr.io/containers05-06/myfirstapp:2.0
+        image: gcr.io/containers05-06/myfirstapp:3.0
+        env:
+        - name: REDIS_HOST
+          value: 127.0.0.1
+        - name: MESSAGE
+          value: "ANTONIO JR. - LAB_GABY"
         ports:
         - name: http
           containerPort: 80
